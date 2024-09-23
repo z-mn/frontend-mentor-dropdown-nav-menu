@@ -31,7 +31,6 @@ ul {
 
 body {
     font-family: var(--ff-primary);
-    min-height: 100vh;
     background-color: var(--clr-white);
     color: var(--clr-black);
 }
