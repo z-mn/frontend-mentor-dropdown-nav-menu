@@ -8,6 +8,7 @@
     --fw-primary: 500;
     --fw-header: 700;
     --fs-paragraph: 1.125rem;
+    --fs-paragraph--mobile: 0.9rem;
 }
 
 *, *::before, *::after {
@@ -18,3 +19,125 @@
     margin: 0;
     padding: 0;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: var(--ff-primary);
+    min-height: 100vh;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
+main, header, footer {
+    margin: auto;
+    max-width: 20rem;
+}
+
+/* Header styles  */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0.5rem;
+    z-index: 1;
+}
+
+/* Hamburger menu */
+
+.navbar__hamburger-menu, 
+.navbar__hamburger-menu::before, 
+.navbar__hamburger-menu::after {
+    width: 26px;
+    height: 2px;
+    background-color: var(--clr-black);
+}
+
+.navbar__hamburger-menu {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar__hamburger-menu::before,
+.navbar__hamburger-menu::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+}
+
+.navbar__hamburger-menu::before {
+    bottom: 6px;
+}
+
+.navbar__hamburger-menu::after {
+    top: 6px;
+}
+
+.navbar__hamburger-menu:hover, 
+.navbar__hamburger-menu:hover::before, 
+.navbar__hamburger-menu:hover::after {
+    cursor: pointer;
+}
+
+/* Hamburger menu active */
+
+
+
+/* Hero section styles */
+
+.hero-section, .hero-section__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    row-gap: 2.5rem;
+    text-align: center;
+}
+
+.hero-section__description {
+    row-gap: 1.25rem;
+    padding-inline: 0.5em;
+}
+
+h1 {
+    font-weight: var(--fw-header);
+    font-size: 1.9rem;
+}
+
+p {
+    font-size: var(--fs-paragraph--mobile);
+    line-height: 1.5;
+    color: var(--clr-gray);
+}
+
+.hero-section__link {
+    padding: 1em 0.75em;
+    font-size: var(--fs-paragraph--mobile);
+    background-color: var(--clr-black);
+    display: inline-block;
+    margin-inline: auto;
+    width: 8rem;
+    color: var(--clr-white);
+    border-radius: 12px;
+    font-weight: var(--fw-header);
+}
+
+ /* Footer styles */
+
+ .client-list {
+    margin-block-start: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    padding-inline: 0.5em;
+    justify-content: space-evenly;
+ }
+
