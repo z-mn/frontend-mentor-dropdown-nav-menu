@@ -47,7 +47,6 @@ main, header, footer {
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 0.5rem;
-    z-index: 1;
 }
 
 /* Hamburger menu */
@@ -58,31 +57,29 @@ main, header, footer {
     width: 26px;
     height: 2px;
     background-color: var(--clr-black);
-}
-
-.navbar__hamburger-menu {
-    position: relative;
-    z-index: 2;
+    position: absolute;
 }
 
 .navbar__hamburger-menu::before,
 .navbar__hamburger-menu::after {
     content: '';
-    position: absolute;
-    z-index: 3;
 }
 
 .navbar__hamburger-menu::before {
-    bottom: 6px;
+    bottom: -12px;
 }
 
 .navbar__hamburger-menu::after {
     top: 6px;
 }
 
-.navbar__hamburger-menu:hover, 
-.navbar__hamburger-menu:hover::before, 
-.navbar__hamburger-menu:hover::after {
+div:has(> .navbar__hamburger-menu) {
+    position: relative;
+    width: 26px;
+    height: 14px;
+}
+
+div:has(> .navbar__hamburger-menu):hover {
     cursor: pointer;
 }
 
