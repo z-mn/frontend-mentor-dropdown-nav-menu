@@ -46,7 +46,9 @@ main, header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 0.5rem;
+    padding-inline: 0.75rem;
+    position: relative;
+    margin-block-end: 0.25rem;
 }
 
 /* Hamburger menu */
@@ -58,6 +60,7 @@ main, header, footer {
     height: 2px;
     background-color: var(--clr-black);
     position: absolute;
+    transition: transform 200ms ease-in-out;
 }
 
 .navbar__hamburger-menu::before,
@@ -77,6 +80,7 @@ div:has(> .navbar__hamburger-menu) {
     position: relative;
     width: 26px;
     height: 14px;
+    z-index: 1;
 }
 
 div:has(> .navbar__hamburger-menu):hover {
@@ -85,7 +89,39 @@ div:has(> .navbar__hamburger-menu):hover {
 
 /* Hamburger menu active */
 
+.navbar__hamburger-menu--active {
+    transform: rotate(45deg);
+    transition: transform 200ms ease-in-out;
+}
 
+.navbar__hamburger-menu--active::after {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: transform 200ms ease-in-out;
+}
+
+.navbar__hamburger-menu--active::before {
+    opacity: 0;
+}
+
+/* Menu styles */
+
+.hamburger-menu__sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 13rem;
+    background: var(--clr-white);
+    transition: transform 200ms ease-in-out;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
+}
+
+.hamburger-menu__sidebar--hidden {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 200ms ease-in-out 200ms, opacity 200ms ease-in-out;
+}
 
 /* Hero section styles */
 
