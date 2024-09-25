@@ -52,7 +52,7 @@ main, header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 1.5rem;
+    padding-inline: 1.5em;
     position: relative;
     margin-block-end: 0.25rem;
 }
@@ -190,7 +190,7 @@ p {
     margin-block-start: 3rem;
     display: flex;
     gap: 1.5rem;
-    padding-inline: 0.5em;
+    padding-inline: 1.5em;
     justify-content: space-evenly;
  }
 
