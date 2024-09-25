@@ -125,14 +125,16 @@ div:has(> .navbar__hamburger-menu):hover {
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
     background: var(--clr-white);
     transition: transform 200ms ease-in-out;
+    transition-behavior: allow-discrete;
 }
 
 .hamburger-menu__sidebar--hidden {
     transform: translateX(100%);
-    visibility: hidden;
+    display: none;
     opacity: 0;
     box-shadow: none;
     transition: transform 200ms ease-in-out 200ms, opacity 200ms ease-in-out;
+    transition-behavior: allow-discrete;
 }
 
 /* Hero section styles */
