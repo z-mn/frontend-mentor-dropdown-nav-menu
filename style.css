@@ -37,7 +37,7 @@ body {
 
 main, header, footer {
     margin: auto;
-    max-width: 20rem;
+    max-width: 30rem;
 }
 
 /* Header styles  */
