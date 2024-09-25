@@ -129,6 +129,7 @@ div:has(> .navbar__hamburger-menu):hover {
 
 .hamburger-menu__sidebar--hidden {
     transform: translateX(100%);
+    visibility: hidden;
     opacity: 0;
     box-shadow: none;
     transition: transform 200ms ease-in-out 200ms, opacity 200ms ease-in-out;
