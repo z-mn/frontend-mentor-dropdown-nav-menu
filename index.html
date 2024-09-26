@@ -14,11 +14,16 @@
   <header>
     <nav id="navigation" class="navbar overflow-toggle">
       <img src="./images/logo.svg" alt="" width="70" height="70" class="navbar__logo">
-      <div id="hamburger-container" class="focus"><span class="navbar__hamburger-menu" id="hamburger"></span></div>
+      <div id="hamburger-container" class="focus" tabindex="0"><span class="navbar__hamburger-menu" id="hamburger"></span></div>
       <div id="sidebar" class="hamburger-menu__sidebar hamburger-menu__sidebar--hidden">
         <ul class="sidebar__options-pane">
-
+          <li class="focus">Features<span>&#8964;</span></li>
+          <li class="focus">Company<span>&#8964;</span></li>
+          <li class="focus">Careers</li>
+          <li class="focus">About</li>
         </ul>
+        <a href="" class="options-pane__button">Login</a>
+        <a href="" class="options-pane__button options-pane__button--border">Register</a>
       </div>
     </nav>
   </header>
@@ -29,7 +34,7 @@
         <h1>Make remote work</h1>
         <p>Get your team in sync, no matter your location. Streamline processes, 
           create team rituals, and watch productivity soar.</p>
-        <a class="hero-section__link focus" href="">Learn more</a>
+        <a class="hero-section__link" href="" tabindex="0">Learn more</a>
       </article>
     </section>
   </main>
