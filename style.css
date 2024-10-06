@@ -193,8 +193,10 @@ div:has(> .navbar__hamburger-menu) {
 
 .options-pane__dragdown-list li {
     display: flex;
-    align-items: center;
     column-gap: 1rem;
+    height: 16px;
+    width: max-content;
+    align-items: center;
 }
 
 .options-pane__dragdown-list li:not(.options-pane__dragdown-list li:last-of-type) {
