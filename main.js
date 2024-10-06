@@ -10,3 +10,13 @@ menuToggle.addEventListener('click', () => {
     sideMenu.classList.toggle('hamburger-menu__sidebar--hidden');
     navbar.classList.toggle('overflow-toggle');
 })
+
+// List dropdowns on the menu
+
+const menuButtons = document.querySelectorAll('.options-pane__dragdown-button');
+menuButtons.forEach(menuButton => {
+    menuButton.addEventListener('click', () => {
+        menuButton.nextElementSibling.classList.toggle('options-pane__dragdown-list--active');
+        menuButton.classList.toggle('options-pane__dragdown-button--active');
+    })
+})

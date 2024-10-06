@@ -17,8 +17,21 @@
       <div id="hamburger-container" class="focus" tabindex="0"><span class="navbar__hamburger-menu" id="hamburger"></span></div>
       <div id="sidebar" class="hamburger-menu__sidebar hamburger-menu__sidebar--hidden">
         <ul class="sidebar__options-pane">
-          <li class="focus">Features<span>&#8964;</span></li>
-          <li class="focus">Company<span>&#8964;</span></li>
+          <li class="focus options-pane__dragdown">Features<span class="options-pane__dragdown-button">&#8964;</span>
+            <ul class="options-pane__dragdown-list">
+              <li class="focus"><img src="/images/icon-todo.svg" alt="" width="18" height="18"><span>Todo List</span></li>
+              <li class="focus"><img src="/images/icon-calendar.svg" alt="" width="18" height="18"><span>Calendar</span></li>
+              <li class="focus"><img src="/images/icon-reminders.svg" alt="" width="18" height="18"><span>Reminders</span></li>
+              <li class="focus"><img src="/images/icon-planning.svg" alt="" width="18" height="18"><span>Planning</span></li>
+            </ul>
+          </li>
+          <li class="focus options-pane__dragdown">Company<span class="options-pane__dragdown-button">&#8964;</span>
+            <ul class="options-pane__dragdown-list">
+              <li class="focus"><span>History</span></li>
+              <li class="focus"><span>Our Team</span></li>
+              <li class="focus"><span>Blog</span></li>
+            </ul>
+          </li>
           <li class="focus">Careers</li>
           <li class="focus">About</li>
         </ul>
