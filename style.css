@@ -168,7 +168,7 @@ div:has(> .navbar__hamburger-menu) {
 .options-pane__dragdown-button {
     z-index: 10;
     position: absolute;
-    top: -0.3rem;
+    top: 0;
     left: 5rem;
     display: block;
 }
